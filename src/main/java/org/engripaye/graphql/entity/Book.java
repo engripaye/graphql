@@ -12,6 +12,6 @@ public record Book(Integer id,
             new Book(2, "Gifted Hands", 433),
             new Book(3, "Key To Prosperity", 803),
             new Book(4, "Daily Devotion", 713),
-            new Book(5, "Sunday Hours", 513)
+            new Book(5, "Sunday Hours", 813)
     );
 }
