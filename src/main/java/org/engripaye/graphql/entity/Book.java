@@ -14,4 +14,12 @@ public record Book(Integer id,
             new Book(4, "Daily Devotion", 713),
             new Book(5, "Sunday Hours", 813)
     );
+
+    public static Book getBookById(Integer id) {
+
+        return books.stream()
+                .filter(book -> book.id.equals(id))
+                .findFirst()
+                .orElse(null);
+    }
 }
